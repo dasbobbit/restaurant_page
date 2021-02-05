@@ -1,3 +1,123 @@
+body {
+    background-image: url(images/squared_metal.png);
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    line-height: 1.5;
+    /* max-width: 60rem; */
+    /* margin: 0 auto; */
+    /* font-size: 112%; */
+}
 img {
-    max-width: 80vw;
+    align-content: center;
+    width: 100%;
+    /* max-width: 400px; */
 } 
+#content {
+    /* width: 90vw;
+    max-width: 600px; */
+}
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* width: 80%; */
+}
+#header label {
+    order: 1;
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+    background: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    transition: background ease 0.5s;
+}
+#header label:hover {
+    background: rgba(255, 255, 255, 0.3);
+    /* background: var(--bg-secondary); */
+    /* color: var(--text-secondary); */
+}
+
+#main {
+    align-items: center;
+    margin: 0 auto 80px auto;
+    order: 99;
+    flex-grow: 1;
+    min-width: 420px;
+    max-width: 840px;
+    width: 80%;
+    padding: 1rem;
+    background: rgb(236, 236, 236);
+}
+
+#header input[type="radio"] {
+	display: none;
+}
+#header input[type="radio"]:checked + label {
+    background: rgba(255, 255, 255, 0.3);
+    /* filter: grayscale(50%) opacity(1); */
+}
+/* #header input[type="radio"]:checked + label + #main {
+	display: block;
+} */
+/* @media (max-width: 45em) {
+    #main,
+    #header label {
+      order: initial;
+    }
+    #header label {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0.2rem;
+    }
+} */
+.sections {
+    color: rgb(100, 100, 100);
+}
+.section-title {
+    margin: 40px 0 0 0;
+    font-weight: lighter;
+    font-size: 40px;
+    color: rgb(148, 148, 148);
+    text-align: center;
+}
+
+.dish {
+    font-size: 20px;
+    max-width: 40em;
+    margin: 0 3vw;
+    /* padding: 0; */
+    overflow-x: hidden;
+    /* list-style: none */
+}
+
+.dish:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    color: rgb(112, 112, 112);
+    font-size: 10px;
+    margin-top: 12px;
+    content:
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+}
+
+.menu-item-title {
+    padding-right: 0.33em;
+    background: rgb(236, 236, 236);
+}
+
+.menu-item-price {
+    float: right;
+    padding-left: 0.33em;
+    background: rgb(236, 236, 236);
+}
