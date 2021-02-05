@@ -12,20 +12,10 @@ const closeCurrentPage = () => {
     }
 };
 
-let component = (page) => {
-    const element = document.createElement('div');
-    element.innerHTML = renderHomePage();
-    console.log(element);
-
-    return element;
-}
-
 const tabClick = document.addEventListener('click', (e) => {
-    console.log(e.target.textContent);
     if (e.target.textContent == 'home') {
         closeCurrentPage();
         renderHomePage();
-
     }
     if (e.target.textContent == 'menu') {
         closeCurrentPage();
@@ -36,4 +26,5 @@ const tabClick = document.addEventListener('click', (e) => {
         renderContactPage();
     }
 });
+closeCurrentPage();
 renderHomePage();

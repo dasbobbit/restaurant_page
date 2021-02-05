@@ -3,6 +3,7 @@ const loadPage = (() => {
     const contentContainer = document.getElementById("content");
     
     const header = document.createElement('header');
+    header.id= 'header';
     const footer = document.createElement('footer');
     const main = document.createElement('main');
     main.id = 'main';
@@ -11,21 +12,24 @@ const loadPage = (() => {
     const navBarItems = ["home", "menu", "contact"];
     const ul = document.createElement('ul');
     ul.className = 'nav-bar';
-
+    console.log('here');
     navBarItems.forEach((element) => {
-        let li = document.createElement('li');
-        li.textContent = element;
-        li.className = 'nav-button';
-        ul.appendChild(li);
+        let input = document.createElement('input')
+        input.type = 'radio';
+        input.name = 'tabs'
+        input.id = 'tab-' + element;
+        let label = document.createElement('label');
+        label.htmlFor = `${input.id}`;
+        label.textContent = element;
+
+        header.appendChild(input);
+        header.appendChild(label);
     });
 
-    const nav = document.createElement('nav');
-    nav.appendChild(ul);
-    header.appendChild(nav);
+    // header.appendChild(ul);
     contentContainer.appendChild(header);
     contentContainer.appendChild(main);
     contentContainer.appendChild(footer);
-
 
 })();
 
