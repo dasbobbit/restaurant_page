@@ -6,7 +6,7 @@ const content = document.createElement('div');
 
 const img = document.createElement('img');
 
-img.src = '../dist/images/restaurant_outside.jpg';
+img.src = 'images/restaurant_outside.jpg';
 
 const title = document.createElement('h1');
 title.textContent = 'Spiffing Steakhouse';
