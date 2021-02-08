@@ -22,24 +22,24 @@ let dishList = [];
 // dishList.push(new Dish("", "", "", ""));
 // dishList.push(new Dish("", "", "", ""));
 dishList.push(new Dish("Bone marrow and onions", "8", "starters", ""));
-dishList.push(new Dish("Spiffing smoked salmon", "12", "starters", ""));
 dishList.push(new Dish("Smoked mackerel salad", "10", "starters", ""));
+dishList.push(new Dish("Spiffing smoked salmon", "12", "starters", ""));
 dishList.push(new Dish("Spiffing Burger", "12", "mains", "served with chips or salad"));
 dishList.push(new Dish("Poached Scallop with mashed potatoes", "14", "mains"));
-dishList.push(new Dish("Slow-cooked pork ribs", "16", "mains"));
 dishList.push(new Dish("Chilled lobster meat roll", "14", "mains"));
-dishList.push(new Dish("Sirloin (400g)", "26", "steak", ""));
-dishList.push(new Dish("Rib-Eye (350g)", "24", "steak", ""));
+dishList.push(new Dish("Slow-cooked pork ribs", "16", "mains"));
 dishList.push(new Dish("Rump (300g)", "18", "steak", ""));
+dishList.push(new Dish("Rib-Eye (350g)", "24", "steak", ""));
+dishList.push(new Dish("Sirloin (400g)", "26", "steak", ""));
 dishList.push(new Dish("Fillet (350g)", "32", "steak", ""));
-dishList.push(new Dish("Mash", "6", "sides", ""));
-dishList.push(new Dish("Creamy spinach", "7", "sides", ""));
 dishList.push(new Dish("Curly fries", "5", "sides", ""));
 dishList.push(new Dish("Chunky thick-cut chips", "5", "sides", ""));
+dishList.push(new Dish("Mash", "6", "sides", ""));
 dishList.push(new Dish("Macaroni cheese", "6", "sides", ""));
-dishList.push(new Dish("Sticky toffee pudding", "9", "desserts", ""));
+dishList.push(new Dish("Creamy spinach", "7", "sides", ""));
+dishList.push(new Dish("Spiffing cheesecake", "8", "desserts", ""));
 dishList.push(new Dish("Millionaire shortbread", "9", "desserts", ""));
-dishList.push(new Dish("Spiffing cheesecake", "9", "desserts", ""));
+dishList.push(new Dish("Sticky toffee pudding", "10", "desserts", ""));
 console.log(dishList);
 
 const title = document.createElement('h1');
@@ -79,9 +79,9 @@ const renderMenu = () => {
 };
 renderMenu();
 const renderMenuPage = () => {
+    // main.appendChild(title);
     main.appendChild(sections);
     // main.appendChild(img);
-    // main.appendChild(title);
     // main.appendChild(description);
 };
 

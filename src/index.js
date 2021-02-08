@@ -26,5 +26,5 @@ const tabClick = document.addEventListener('click', (e) => {
         renderContactPage();
     }
 });
-closeCurrentPage();
+// closeCurrentPage();
 renderHomePage();

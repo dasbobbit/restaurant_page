@@ -9,14 +9,14 @@ const img = document.createElement('img');
 img.src = '../dist/images/restaurant_outside.jpg';
 
 const title = document.createElement('h1');
-title.textContent = 'Spiffing Steak House';
+title.textContent = 'Spiffing Steakhouse';
 
 const description = document.createElement('p');
-description.textContent = 'The Spiffing Restaurant is a sight to behold, pay as little at $80 per course for an experience of a lifetime.';
+description.textContent = 'The Spiffing Steakhouse, being situated on the corner of the river Thames and the mediterranean Sea, is an absolute must when vising the City. Whether you decide on one of our world class Aussie beef steaks, our seafood, or our hamburgers, you\'ll undoubtedly be raving about it to all your friends and family until they dissown you!';
 
 const renderHomePage = () => {
     main.appendChild(img);
-    main.appendChild(title);
+    // main.appendChild(title);
     main.appendChild(description);
 };
 

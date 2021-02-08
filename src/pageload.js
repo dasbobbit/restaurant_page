@@ -3,30 +3,37 @@ const loadPage = (() => {
     const contentContainer = document.getElementById("content");
     
     const header = document.createElement('header');
-    header.id= 'header';
-    const footer = document.createElement('footer');
     const main = document.createElement('main');
+    const footer = document.createElement('footer');
+    header.id= 'header';
+    footer.id = 'footer';
     main.id = 'main';
-    contentContainer.appendChild(main);
 
     const navBarItems = ["home", "menu", "contact"];
     const ul = document.createElement('ul');
     ul.className = 'nav-bar';
-    console.log('here');
+
+    const navBarButtons = document.createElement('div');
+    navBarButtons.id = 'nav-bar-buttons';
+
+    const restaurantName = document.createElement('h1');
+    restaurantName.textContent = 'Spiffing Steakhouse';
+    restaurantName.id = 'restaurant-name';
+    header.appendChild(restaurantName);
+
     navBarItems.forEach((element) => {
         let input = document.createElement('input')
+        let label = document.createElement('label');
         input.type = 'radio';
         input.name = 'tabs'
         input.id = 'tab-' + element;
-        let label = document.createElement('label');
         label.htmlFor = `${input.id}`;
         label.textContent = element;
 
-        header.appendChild(input);
-        header.appendChild(label);
+        navBarButtons.appendChild(input);
+        navBarButtons.appendChild(label);
     });
-
-    // header.appendChild(ul);
+    header.appendChild(navBarButtons);
     contentContainer.appendChild(header);
     contentContainer.appendChild(main);
     contentContainer.appendChild(footer);
